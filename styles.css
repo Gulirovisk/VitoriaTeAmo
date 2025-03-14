@@ -1,0 +1,366 @@
+html, body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F2F2F2;
+    color: #333;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color:#F2F2F2;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header #titulo {
+    text-align: center;
+    flex-grow: 1;
+}
+
+header img{
+    width: 70px;
+}
+
+header h1 {
+    font-family: "Rakkas";
+    color: black;
+    font-size: 2.5em;
+    text-align: center;
+    width: calc(100% - 80px);
+    border-bottom: 1px solid #333;
+}
+
+#contador {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2em;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#capa{
+    display: flex;
+    justify-content: center;
+}
+
+#capa_1{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+
+#capa_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#capa_2 img {
+    margin: 0 0 0 5px;
+    max-width: 100%;
+    height: 133px;
+    width: 100px;
+    object-fit: cover;
+}
+
+main {
+    flex-grow: 1;
+}
+
+#edicao {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-family:"Playfair Display", serif;
+}
+
+    
+#melhor {
+    font-family:"Rakkas", sans-serif;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+
+    &  h1{
+        margin: 8px;
+    }
+}
+
+main #svg {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.subtitulo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.subtitulo hr {
+    flex-grow: 1;
+    border: none;
+    height: 1px;
+    background-color: #333;
+}
+
+.galeria {
+    text-align: center;
+}
+
+.galeria h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.foto {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    font-family:"Playfair Display", serif;
+}
+
+.foto img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.foto p {
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+#data {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Poiret One", sans-serif;
+    font-size: 1.5em;
+    margin: 0 20px;
+}
+
+#comeco_namoro{
+    display: flex; 
+    justify-content: space-between;
+    justify-content: center;
+
+    & img{
+        height: 200px;
+        object-fit: cover;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    & h2{
+        text-align: center;
+        margin-bottom: 0;
+        font-family:"Rakkas", sans-serif;
+        margin: 20px 0;
+    }
+
+    & p {
+        font-family: "Playfair Display", serif;
+        text-align: left;
+        align-items: flex-start;
+        margin: 0 16px;
+        
+    }
+}
+
+#historia {
+    display: flex;
+    justify-content: space-between;
+
+    &  img{
+        margin: 0 20px;
+        width: 150px;
+        object-fit: cover;
+        display: flex;
+    }
+
+    & p{
+        align-items: flex-start;
+        margin: 0 16px;
+        font-family: "Playfair Display",sans-serif;
+    }
+
+}
+
+#caminhada{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & div{
+        display: flex;
+        justify-content: center ;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+    }
+
+    & img{
+        width: 150px; 
+        height: 150px;
+        object-fit: cover;
+        display: flex;
+        border-radius: 20px;
+        margin-left: 20px;
+    }
+
+    & p{
+        font-family: "Montserrat" sans-serif;
+        width: 200px;
+    }
+    & h4{
+        font-family: "News Cycle", sans-serif;
+        margin-bottom: 0;
+
+    }
+
+    & p, h4{
+        text-align: center;
+
+    }
+}
+
+#musica {
+    display: flex;
+    justify-content: space-between;
+    margin:20px;
+
+    & img{
+        width: 150px;
+        object-fit: cover;
+        display: flex;
+    }
+
+    & pre{
+        align-items: flex-start;
+        font-family: "Playfair Display", serif;
+        white-space: pre-line;
+        margin-left: 20px;
+    }
+    
+}
+
+#mensagem {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    & h1{
+        font-family:"Rakkas", sans-serif;
+        margin: 10px 20px;
+        text-align: center;
+    
+    }
+
+    & p {
+        font-family: "Playfair Display", serif;
+        margin: 0 20px;
+        align-items: flex-start;
+    }
+}
+
+footer {
+    text-align: center;
+    background-color:#F2F2F2;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+    & p{
+        font-family:"Rakkas", sans-serif;
+        font-size: 2.5em
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    svg {
+        width: 100%;
+    }
+    .fotos {
+
+        align-items: center;
+    }
+
+    .foto {
+        width: 150px;
+        height: 275px;
+    }
+
+    .foto img{
+        height: 200px;
+        width: 150px;
+    }
+
+    .subtitulo {
+        font-size: 0.8em;
+    }
+}
+
+
+#svg {
+    margin-bottom: 20px;
+}
+
+svg #line {
+    fill: none;
+    stroke: #A60303;
+    stroke-width: 1.5;
+    stroke-linecap: butt;
+    stroke-linejoin: round;
+    stroke-miterlimit: 4;
+  
+    stroke-opacity: 1;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: dash 5s linear infinite;
+  }
+  svg #point {
+    fill: none;
+    stroke: #A60303;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: .1;
+    stroke-opacity: 1;
+    stroke-dasharray: .0001, .9999;
+    stroke-dashoffset: 1;
+    animation: dash 5s linear infinite;
+  }
+  
+  @keyframes dash {
+    0% {
+      stroke-dashoffset: 1;
+    }
+    80% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
